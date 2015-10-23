@@ -1,0 +1,82 @@
+turtles-own [energy]
+
+to setup
+  clear-all
+  setup-patches
+  setup-turtles
+  reset-ticks
+end
+
+to Go!
+  if ticks >= 500 [ stop]
+  move-turtles
+  eat-grass
+  reproduce
+  check-death
+  regrow-grass
+  tick
+end
+
+to move-turtles
+  ask turtles [
+    right random 360
+    forward 1
+    set energy energy - 1
+  ]
+end
+
+to setup-patches
+  ask patches [ set pcolor green ]
+end
+
+to setup-turtles
+  create-turtles number
+  ask turtles [ setxy random-xcor random-ycor ]
+end
+
+to eat-grass
+  ask turtles [
+    if pcolor = green [
+      set pcolor black
+      set energy (energy + energy-from-grass)
+    ]
+    ifelse show-energy?
+      [ set label energy ]
+      [ set label "" ]
+  ]
+end
+
+to reproduce
+  ask turtles [
+    if energy > birth-energy [
+      set energy (energy - birth-energy)
+      hatch 1 [ set energy birth-energy ]
+    ]
+  ]
+end
+
+to check-death
+  ask turtles [
+    if energy <= 0 [ die ]
+  ]
+end
+
+to regrow-grass
+  ask patches [
+    if random 100 < 3 [ set pcolor green ]
+  ]
+end
+
+to disease
+  ask turtles [
+    if energy < energy-to-death [ die ]
+  ]
+end
+
+to grow
+  ask patches [
+    if pcolor = black [
+      if random 100 < 50 [ set pcolor green ]
+    ]
+  ]
+end
