@@ -1,0 +1,9 @@
+Selbstorganisierende Systeme:
+
+Fisch oder Vogelschwärme: Jedes Individuum agiert autonom und trotzdem erzeugen alle emergente Eigenschaften wie Bewegungsformationen. Diese Formationen können simuliert werden durch Prinzipien die jeder Agent für sich versucht einzuhalten: Kohäsion, Separation und Ausrichtung (Boids). Die Agenten stehen damit in Wechselwirkung zuueinander. Einen Einfluss auf die Umwelt haben sie nicht, die Umwelt kann beispielsweise Einfluss durch Strömungen nehmen.
+
+Gehirn: Komplexes Sytsem bestehend aus Neuronen. Das Gehirn steht über die Sinnesorgane und Muskeln im Austausch mit der Umwelt. Emeregente Erscheinungen ist beispielsweise die unterschiedliche Wahrnehmung und Interpretation von Bildern.
+
+Quellen:
+http://www.red3d.com/cwr/boids/
+http://www.scholarpedia.org/article/Self-organization_of_brain_function
