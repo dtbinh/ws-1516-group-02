@@ -1,0 +1,23 @@
+Ausgangssituation:
+	298 Freiheitsgrade
+	Ablehnung der Nullhypothese (t = -56,24 und p = 9,92 * 10^-159 %)
+	Mittelwerte: 32,80 % bzw. 65,84 %
+	Standardabweichungen: 4,97 % bzw. 5,16 %
+
+Situation mit Gradiation:
+	298 Freiheitsgrade
+	Ablehnung der Nullhypothese (t = -20,73 und p = 9,79 * 10^-58 %)
+	Mittelwerte: 40,70 % bzw. 57,08 %
+	Standardabweichungen: 6,51 % bzw. 7,12 %
+
+a) Ja, der Unterschied bleibt deutlich signifikant. Die Mittelwerte rücken zwar deutlich näher zusammen (auf etwa den halben Abstand wie vorher),
+	sind aber weit davon entfernt, von der selben Verteilung stammen zu können.
+
+b) 	- Einfügen des Buttons, der zwischen "Setup" und "Go" gedrückt werden kann
+	- Einführung einer Variable "inversion?", die bei Klick des Buttos auf "wahr" gestellt wird und dann angibt, dass Schwarz auch nicht wechselt
+	- Beschränkung der Funktion "do-switch?" auf den Fall, dass "inversion?"=false
+Ergebnis bei gedrücktem Button:
+	298 Freiheitsgrade
+	KEINE Ablehnung der Nullhypothese auf Signifikanzniveau 1 % möglich (t = -2,24 und p = 2,57 %)
+	Mittelwerte: 32,46 % bzw. 33,42 %
+	Standardabweichungen: 3,93 % bzw. 3,49 %
