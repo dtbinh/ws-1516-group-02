@@ -1,0 +1,12 @@
+a) H^X = - 1 * log_2(1) - 0 * log_2(0) = - 1*0 - 0*log_2(0) = 0
+
+b) Wahrscheinlichkeitsraum (Omega, Pot(Omega), P) mit
+	Omega = {Kopf, Zahl},
+	Pot(Omega) = {leer, {Kopf}, {Zahl}, {Kopf, Zahl}} und
+	P: Pot(Omega) --> [0,1], leer -> 0 / {Kopf} -> h / {Zahl} -> 1-h / Omega -> 1
+   h = 0:   H^X = - 0 * log_2(0) - 1 * log_2(1) = - 0*log_2(0) - 1*0 = 0
+   h = 1:   H^X = - 1 * log_2(1) - 0 * log_2(0) = - 1*0 - 0*log_2(0) = 0
+   h = 0,5: H^X = - 0,5 * log_2(0,5) - 0,5 * log_2(0,5) = 0,5 + 0,5 =  1
+	Je genauer wir über den Ausgang des Münzwurfs Bescheid wissen, desto kleiner ist die Entropie.
+	Bei P({Kopf}) = 1 oder 0 ist eine exakte Vorhersage möglich, bei P({Kopf}) = 0,5 sind unsere Vorhersagemöglichkeiten am geringsten.
+	
